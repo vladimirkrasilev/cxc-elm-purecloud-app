@@ -1,12 +1,12 @@
 export default {
     clientID: '73c2e074-0950-480e-a8c3-10a9ab474768', //stasz-dev-5
-    wizardUriBase: 'https://curly-happiness-29n6lpv.pages.github.io/wizard/',
+    wizardUriBase: 'https://imgenesys.github.io/cxc-elm-purecloud-app/wizard/',
     // wizardUriBase: 'http://localhost:8080/wizard/',
     // wizardUriBase: 'https://mypurecloud.github.io/purecloud-premium-app/wizard/',
 
     // The actual URL of the landing page of your web app or your web site (when wizard has been run).
     // previously - defined as premiumAppURL
-    redirectURLOnWizardCompleted: 'https://curly-happiness-29n6lpv.pages.github.io/premium-app-sample/index.html',
+    redirectURLOnWizardCompleted: 'https://imgenesys.github.io/cxc-elm-purecloud-app/premium-app-sample/index.html',
     // redirectURLOnWizardCompleted: 'http://localhost:8080/premium-app-sample/index.html',
     //redirectURLOnWizardCompleted: 'https://mypurecloud.github.io/purecloud-premium-app/premium-app-sample/index.html',
     redirectURLWithParams: true,
