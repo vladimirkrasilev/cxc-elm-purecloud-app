@@ -1,0 +1,21 @@
+
+{
+  "author": "Genesys App Foundry",
+  "title": "App Foundry CX Contact Enhanced List Manager App",
+  "logo_url": "https://developer.mypurecloud.com/images/genesys-icon.svg",
+  "categories": [
+    "app foundry",
+    "enhanced list manager"
+  ],
+  "tags": [
+    "enhanced list manager",
+    "CX Contact",
+    "javascript"
+  ],
+  "apis": [
+    "platform"
+  ],
+  "sdks": [
+    "javascript"
+  ]
+}

@@ -1,1 +1,1 @@
-# cxc-elm-purecloud-app
+# Installation Wizard for AppFoundry CX Contact application
