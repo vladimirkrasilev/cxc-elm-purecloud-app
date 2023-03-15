@@ -600,7 +600,9 @@ function afterCustomSetupPage() {
   }
 
   config.provisioningInfo['app-instance'][0].url =
-    `https://${elmEnv}${ELM_BASE_URL_MAP['app-instance']}&ccid=${ccid}&language={{pcLangTag}}&environment={{pcEnvironment}}`
+    `https://${elmEnv}${ELM_BASE_URL_MAP['app-instance']}&ccid=${ccid}&language={{pcLangTag}}&environment={{pcEnvironment}}`;
+  config.provisioningInfo['oauth-client'][1].registeredRedirectUri =
+    [`https://${elmEnv}${ELM_BASE_URL_MAP['login-callback']}`];
   config.contactCenterId = ccid;
   
   return true;

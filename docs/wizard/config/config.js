@@ -118,6 +118,14 @@ export default {
                  * Please read about the Post Custom Setup module here:
                  * https://developer.genesys.cloud/appfoundry/premium-app-wizard/7-custom-setup#post-custom-setup-module
                  */
+            },
+            {
+                'name': 'ELM OAuth AuthCode Client',
+                'description': 'Generated Client that\'s used by the ELM App FrontEnd and the CXC App Backend',
+                'registeredRedirectUri': [],
+                'scope': ['user-basic-info', 'analytics', 'search:readonly'],
+                'authorizedGrantType': 'CODE',
+                'accessTokenValiditySeconds': 86400
             }
         ]
     },

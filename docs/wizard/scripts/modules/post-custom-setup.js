@@ -34,6 +34,8 @@ async function configure(logFunc, installedData, user, gcClient) {
                 genesysCloudOrg: user.organization.id,
                 genesysCloudClientId: installedData['oauth-client'][config.provisioningInfo['oauth-client'][0].name].id,
                 genesysCloudClientSecret: installedData['oauth-client'][config.provisioningInfo['oauth-client'][0].name].secret,
+                genesysCloudCodeGrantClientId: installedData['oauth-client'][config.provisioningInfo['oauth-client'][1].name].id,
+                genesysCloudCodeGrantClientSecret: installedData['oauth-client'][config.provisioningInfo['oauth-client'][1].name].secret,
             };
 
             const headers = new Headers({

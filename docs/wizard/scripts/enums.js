@@ -89,5 +89,6 @@ export const PC_ENVIRONMENT_CLIENT_ID_MAP = {
 
 export const ELM_BASE_URL_MAP = {
     'provision-gc': `/cx-contact/v3/tenants/provision-gc`,
+    'login-callback': `/cx-contact/v3/gc/login-callback`,
     'app-instance': `/ui/cxcontact/#!/lists/list?gcMode=true`,
 }
