@@ -123,7 +123,17 @@ export default {
                 'name': 'ELM OAuth AuthCode Client',
                 'description': 'Generated Client that\'s used by the ELM App FrontEnd and the CXC App Backend',
                 'registeredRedirectUri': [],
-                'scope': ['user-basic-info', 'analytics', 'search:readonly'],
+                'scope': [
+                  'user-basic-info',
+                  'analytics',
+                  'architect:readonly',
+                  'conversations',
+                  'outbound',
+                  'routing',
+                  'scripts:readonly',
+                  'telephony:readonly',
+                  'search:readonly',
+                ],
                 'authorizedGrantType': 'CODE',
                 'accessTokenValiditySeconds': 86400
             }
