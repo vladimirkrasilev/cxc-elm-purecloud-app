@@ -133,14 +133,19 @@ async function configure(logFunc, installedData, userId) {
                             if (userAssigned) {
                                 clearInterval(timer);
 
+                                const roleIds = oauthInstall.roles
+                                .map((roleName) => installedData.role[roleName].id)
+                                .filter(g => g != undefined);
+                                
                                 oAuthApi.putOauthClient(
                                     oauthData[oauthKey].id,
                                     {
                                         name: oauth.name,
                                         authorizedGrantType: oauth.authorizedGrantType,
-                                        roleIds: oauthInstall.roles.map(
-                                            (roleName) => installedData.role[roleName].id)
-                                            .filter(g => g != undefined)
+                                        roleIds,
+                                        /*roleDivisions: roleIds.map((roleId) => {
+                                            return { roleId, divisionId: '*' };
+                                        }),*/
                                     }
                                 )
                                     .then(() => {

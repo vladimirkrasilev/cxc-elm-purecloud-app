@@ -75,7 +75,7 @@ async function create(logFunc, data) {
     data.forEach((role) => {
         let roleBody = {
             name: config.prefix + role.name,
-            description: '',
+            description: role.description,
             permissionPolicies: role.permissionPolicies
         };
 

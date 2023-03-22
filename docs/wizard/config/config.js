@@ -80,13 +80,161 @@ export default {
         'role': [
             {
                 'name': 'ELM Role',
-                'description': 'Generated role for access to the app.',
+                'description': 'Role for access to the ELM application.',
                 'permissionPolicies': [
                     {
                         'domain': 'integration',
                         'entityName': 'examplePremiumApp',
                         'actionSet': ['*'],
                         'allowConditions': false
+                    },
+                    {
+                        "domain": "architect",
+                        "entityName": "dependencyTracking",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "analytics",
+                        "entityName": "conversationAggregate",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "architect",
+                        "entityName": "systemPrompt",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "routing",
+                        "entityName": "wrapupCode",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "analytics",
+                        "entityName": "dataExport",
+                        "actionSet": [
+                            "add",
+                            "view",
+                            "edit",
+                            "delete"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "reporting",
+                        "entityName": "outbound",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "architect",
+                        "entityName": "flow",
+                        "actionSet": [
+                            "search",
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "conversation",
+                        "entityName": "call",
+                        "actionSet": [
+                            "barge",
+                            "monitor",
+                            "coach"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "scripter",
+                        "entityName": "publishedScript",
+                        "actionSet": [
+                            "view",
+                            "search"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "architect",
+                        "entityName": "ui",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "architect",
+                        "entityName": "userPrompt",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "routing",
+                        "entityName": "queue",
+                        "actionSet": [
+                            "view",
+                            "search",
+                            "join"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "conversation",
+                        "entityName": "callback",
+                        "actionSet": [
+                            "create"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "conversation",
+                        "entityName": "participant",
+                        "actionSet": [
+                            "wrapup"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "conversation",
+                        "entityName": "communication",
+                        "actionSet": [
+                            "disconnect",
+                            "view",
+                            "transfer",
+                            "target"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "telephony",
+                        "entityName": "sites",
+                        "actionSet": [
+                            "view"
+                        ],
+                        "allowConditions": false
+                    },
+                    {
+                        "domain": "outbound",
+                        "entityName": "*",
+                        "actionSet": [
+                            "*"
+                        ],
+                        "allowConditions": false
                     }
                 ]
             }
