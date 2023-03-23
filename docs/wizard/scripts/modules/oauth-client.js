@@ -142,10 +142,9 @@ async function configure(logFunc, installedData, userId) {
                                     {
                                         name: oauth.name,
                                         authorizedGrantType: oauth.authorizedGrantType,
-                                        roleIds,
-                                        /*roleDivisions: roleIds.map((roleId) => {
+                                        roleDivisions: roleIds.map((roleId) => {
                                             return { roleId, divisionId: '*' };
-                                        }),*/
+                                        }),
                                     }
                                 )
                                     .then(() => {

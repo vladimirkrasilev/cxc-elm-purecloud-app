@@ -113,10 +113,16 @@ async function configure(logFunc, installedData, userId) {
 
     Object.keys(roleData).forEach((roleKey) => {
         promiseArr.push((async () => {
-            await authorizationApi.putAuthorizationRoleUsersAdd(
-                    roleData[roleKey].id,
-                    [userId]
-                );
+            await authorizationApi.postAuthorizationRole(
+              roleData[roleKey].id,
+              {
+                  subjectIds: [userId],
+                  divisionIds: ['*'],
+              },
+              {
+                  subjectType: "PC_USER",
+              }
+              );
             logFunc('Assigned ' + roleData[roleKey].name + ' to user');
         })());
     });
